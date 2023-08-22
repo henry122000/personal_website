@@ -16,8 +16,8 @@ body{
 }
 
 .logo{
-    width: 10%;
-    height: 10%
+    width: 7%;
+    height: 7%
 }
 
 nav{
@@ -38,14 +38,36 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     position: relative;
+    font-family: 'Black Ops One', cursive;
+}
+
+nav ul li a::before{
+    content:'';
+    width:0;
+    height: 3px;
+    background: #2196F3;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
 }
 
 nav ul li a::after{
     content:'';
-    width:100%;
+    width:0;
     height: 3px;
     background: #2196F3;
     position: absolute;
     left: 0;
-    bottom: -7px;
+    bottom: 120%;
+    transition: 0.5s;
 }
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
