@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -10,13 +10,15 @@ body{
     color: #fff;
 }
 
-#header{
-    width: 100%;
+header{
+    /* width: 100%;
     height: 100vh;
     background-image: url(pics/background.png);
     background-position: center;
     background-size: cover; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    position: sticky;
+    top: 0;
 }
 
 .container{
@@ -40,7 +42,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
+    /* position: fixed;
+    top: 0;
+    z-index: 1030; */
+
 }
 
 nav ul li{
@@ -95,10 +100,20 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.home {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(pics/background.png);
+    background-position: center;
+    background-size: cover; 
+    top: 0;
+}
 .hText{
-    margin: 15% 20%; 
+
+    padding: 15% 20%; 
     font-size: 60px;
-    position: relative;
+
 }
 
 .hText h1 span{
