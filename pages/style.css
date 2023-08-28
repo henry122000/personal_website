@@ -102,11 +102,10 @@ nav ul li a:hover::after{
 
 .home {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-image: url(pics/background.png);
     background-position: center;
     background-size: cover; 
-    top: 0;
 }
 .hText{
 
@@ -150,7 +149,7 @@ nav ul li a:hover::after{
 
 .subTitle{
     font-size: 60px;
-    font-weight: bolder;
+    font-weight: 900;
     color: #2196F3;
 }
 
