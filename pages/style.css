@@ -29,16 +29,6 @@ header{
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-@keyframes slideRight{
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(100px);
-        opacity: 1;
-    }
-}
 /* ---nav bar--- */
 nav{
     display: flex;
@@ -50,6 +40,8 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 40px;  
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
 }
 nav ul li a{
     color: #2196F3;
@@ -102,6 +94,8 @@ nav ul li a:hover::after{
     padding: 15% 20%; 
     padding-bottom: 15px;
     font-size: 40px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 .hText h1 span{
     color: #2196F3;
@@ -111,6 +105,8 @@ nav ul li a:hover::after{
 }
 .homeLink{
     padding: 10px 20%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
 }
 .homeLink a{
     display: inline-flex;
@@ -159,4 +155,34 @@ nav ul li a:hover::after{
     font-weight: 900;
     color: #2196F3;
 }
-
+/* ---slide animation-- */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
