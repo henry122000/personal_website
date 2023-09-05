@@ -87,11 +87,35 @@ nav ul li a:hover::after{
 .hText{
 
     padding: 15% 20%; 
-    font-size: 60px;
+    padding-bottom: 15px;
+    font-size: 55px;
 
 }
 .hText h1 span{
     color: #2196F3;
+
+}
+.homeLink{
+    padding: 10px 20%;
+}
+.homeLink a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0px 20px;
+    border-radius: 50%;
+    border: 4px solid #2196F3;
+    color: #2196F3;
+}
+.homeLink a:hover{
+    transition: 0.5s;
+    background-color: #2196F3;
+    color: #fff;
+    box-shadow: 0 0 20px #2196F3;
 }
 /* ----------about--------- */
 #about{
