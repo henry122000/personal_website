@@ -18,6 +18,7 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
+/* ---animation logo--- */
 .logo{
     margin: 10px;
     padding: 10px;
@@ -25,7 +26,20 @@ header{
     height: 10%;
     min-height: 70px;
     min-width: 150px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+}
+/* ---nav bar--- */
 nav{
     display: flex;
     align-items: center;
@@ -79,21 +93,21 @@ nav ul li a:hover::after{
 /* -------home------- */
 #home {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-image: url(pics/background.png);
     background-position: center;
     background-size: cover; 
 }
 .hText{
-
     padding: 15% 20%; 
     padding-bottom: 15px;
-    font-size: 55px;
-
+    font-size: 40px;
 }
 .hText h1 span{
     color: #2196F3;
-
+}
+.typeLine{
+    font-size: 60px;
 }
 .homeLink{
     padding: 10px 20%;
