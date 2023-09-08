@@ -152,6 +152,40 @@ nav ul li a:hover::after{
     font-weight: 900;
     color: #2196F3;
 }
+.sectionTitle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.sectionLink{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.sectionLink::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #2196F3;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.sectionLink.activeLink::after{
+    width: 100%;
+}
+.sectionContent ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.sectionContent{
+    display: none;
+}
+.sectionContent.activeContent{
+    display: block;
+}
 /* ---slide animation-- */
 @keyframes slideRight{
     0%{
