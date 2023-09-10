@@ -256,6 +256,9 @@ nav ul li a:hover::after{
     display: block;
     height: 100%;
     border-radius: 10px;
+    animation: animateBar 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
 }
 .techBar .bar .html span{
     width: 70%;
@@ -271,6 +274,47 @@ nav ul li a:hover::after{
 }
 .techBar .bar .cpp span{
     width: 55%;
+}
+.techBar .bar .progressBar span::after{
+    position: absolute;
+    padding: 6px 8px;
+    background-color: #2196F3;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -40px;
+    right: -20px;
+    animation: showContent 1s 0.5s linear forwards;
+    opacity: 0;
+}
+.techBar .bar .html span::after{
+    content: "70%";
+}
+.techBar .bar .css span::after{
+    content: "65%";
+}
+.techBar .bar .javascript span::after{
+    content: "55%";
+}
+.techBar .bar .python span::after{
+    content: "50%";
+}
+.techBar .bar .cpp span::after{
+    content: "55%";
+}
+.techBar .bar .progressBar span::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #2196F3;
+    top: -100px;
+    right: 0;
+    animation: showContent 1s 0.5s linear forwards;
+    opacity: 0;
 }
 /* ---Contact--- */
 #contact{
@@ -302,6 +346,10 @@ nav ul li a:hover::after{
 @keyframes animateBar {
     100%{
         transform: scaleX(1);
-
+    }
+}
+@keyframes showContent{
+    100%{
+        opacity: 1;
     }
 }
