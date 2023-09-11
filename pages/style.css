@@ -280,7 +280,7 @@ nav ul li a:hover::after{
     padding: 6px 8px;
     background-color: #2196F3;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 3px;
     top: -40px;
     right: -20px;
@@ -307,14 +307,64 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 0;
-    border: 7px transparent;
+    border: 7px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
     border-top-color: #2196F3;
-    top: -100px;
+    top: -15px;
     right: 0;
     animation: showContent 1s 0.5s linear forwards;
     opacity: 0;
+}
+.circleBar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.circleBar .radialBar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.circleBar .radialBar svg{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.circleBar .radialBar .progressLine{
+    stroke-width: 10;
+    stop-color: #0b0b0b;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animateLine 1s linear forwards;
+}
+.line{
+    stroke-width: 10;
+    stroke: #2196F3;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.line1{
+    animation: animateLine1 1s 1s linear forwards;
+}
+.line2{
+    animation: animateLine2 1s 1s linear forwards;
+}
+.line3{
+    animation: animateLine3 1s 1s linear forwards;
+}
+.line4{
+    animation: animateLine4 1s 1s linear forwards;
 }
 /* ---Contact--- */
 #contact{
@@ -351,5 +401,30 @@ nav ul li a:hover::after{
 @keyframes showContent{
     100%{
         opacity: 1;
+    }
+}
+@keyframes animateLine {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+@keyframes animateLine1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animateLine2 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animateLine3 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animateLine4 {
+    100%{
+        stroke-dashoffset: 50;
     }
 }
