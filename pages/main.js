@@ -1,3 +1,4 @@
+// typing animation
 var typed= new Typed(".text", {
     strings:["Software Developer"],
     typeSpeed: 100,
@@ -5,6 +6,7 @@ var typed= new Typed(".text", {
     backDelay: 1000,
     loop: true
 })
+// about me open tab
 var section_links = document.getElementsByClassName("sectionLink");
 var section_contents = document.getElementsByClassName("sectionContent");
 function openSection(sectionName){
@@ -16,4 +18,23 @@ function openSection(sectionName){
     }
     event.currentTarget.classList.add("activeLink");
     document.getElementById(sectionName).classList.add("activeContent");
+}
+//active section
+let sections = document.querySelectorAll('section');
+let nav = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        if(top >= offset && top < offset + height){
+            nav.forEach(link => {
+                link.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        }
+    });
+    
 }
