@@ -355,16 +355,36 @@ nav ul li a:hover::after{
     stroke-linecap: round;
 }
 .line1{
-    animation: animateLine1 1s 1s linear forwards;
+    animation: animateLine1 1s 0.5s linear forwards;
 }
 .line2{
-    animation: animateLine2 1s 1s linear forwards;
+    animation: animateLine2 1s 0.5s linear forwards;
 }
 .line3{
-    animation: animateLine3 1s 1s linear forwards;
+    animation: animateLine3 1s 0.5s linear forwards;
 }
 .line4{
-    animation: animateLine4 1s 1s linear forwards;
+    animation: animateLine4 1s 0.5s linear forwards;
+}
+.circleBar .radialBar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: bold;
+    animation: showContent 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.circleBar .radialBar .textSub{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 12%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    animation: showContent 0.5s 1s linear forwards;
 }
 /* ---Contact--- */
 #contact{
