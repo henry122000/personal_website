@@ -430,7 +430,7 @@ nav ul li a:hover::after{
 }
 @keyframes animateLine1 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 80;
     }
 }
 @keyframes animateLine2 {
@@ -440,11 +440,11 @@ nav ul li a:hover::after{
 }
 @keyframes animateLine3 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animateLine4 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 150;
     }
 }
