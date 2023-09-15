@@ -393,6 +393,8 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    width: 80%;
+    margin: auto;
 }
 #contact{
     width: 100%;
@@ -433,6 +435,56 @@ nav ul li a:hover::after{
     margin: 0px 5px;
     border: 2px solid #2196F3;
     border-radius: 50%;
+    transition: transform 0.5s;
+}
+.contactLeft .contactLink a:hover{
+    transition: 0.5s;
+    background-color: #2196F3;
+    color: #fff;
+    transform: translateY(-5px);
+}
+.contactRight form{
+    width: 100%;
+}
+form input, form textarea {
+    /* position: relative; */
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.submitButton {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    background: #2196F3;
+    width: fit-content;
+    border: 1px solid #2196F3;
+    padding: 12px 50px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+form textarea{
+    height: 250px;
+    resize: none;
+}
+#contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    /* background: #112e42; */
+    border-radius: 6px;
+    /* z-index: -1;
+    transition: 0.5s; */
 }
 /* ---animation-- */
 @keyframes slideRight{
