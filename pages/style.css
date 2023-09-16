@@ -474,7 +474,7 @@ form textarea{
     height: 250px;
     resize: none;
 }
-#contact form .focus{
+#contact .contactRight form .focus{
     position: absolute;
     top: 0;
     left: 0;
@@ -485,6 +485,26 @@ form textarea{
     border-radius: 6px;
     /* z-index: -1;
     transition: 0.5s; */
+}
+/* ---footer--- */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+    background: #2196F3;
+}
+.footerText p{
+    font-size: 20px;
+}
+.upTop a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: ;
 }
 /* ---animation-- */
 @keyframes slideRight{
