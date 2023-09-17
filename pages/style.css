@@ -474,18 +474,18 @@ form textarea{
     height: 250px;
     resize: none;
 }
-#contact .contactRight form .focus{
+/* #contact .contactRight form .focus{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: red; */
-    /* background: #112e42; */
+    background: red; 
+    background: #112e42;
     border-radius: 6px;
-    /* z-index: -1;
-    transition: 0.5s; */
-}
+    z-index: -1;
+    transition: 0.5s;
+} */
 /* ---footer--- */
 .footer{
     display: flex;
@@ -498,14 +498,27 @@ form textarea{
 .footerText p{
     font-size: 20px;
 }
-.upTop a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: ;
+.upTop{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
 }
+.upTop i{
+    font-size: 40px;
+    color: #2196F3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid #2196F3;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+.upTop i:hover{
+    color: white;
+    background-color: #2196F3;
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #2196F3;
+}
+
 /* ---animation-- */
 @keyframes slideRight{
     0%{
