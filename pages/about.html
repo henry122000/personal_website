@@ -31,7 +31,7 @@
         </header>
         <main>
             <!-- home section -->
-            <section id="home">
+            <section class="home scrollAnimate" id="home">
                 <div class="hText">
                     <h1>Hi, I'm <span>Henry</span> Dao <br>from Canada</h1>
                     <h1 class="typeLine">And I'm a <span class="text"></span></h1>
@@ -44,7 +44,7 @@
                 </div>
             </section>
             <!-- about me section -->
-            <section id="about">
+            <section class="about" id="about">
                 <div class="aboutWrap">
                     <div class="row">
                         <div class="picAbout">
@@ -53,30 +53,32 @@
                         <div class="aboutContent">
                             <h1 class="subTitle">About <span>Me</span></h1>
                             <p class="summary">Insert about later</p>
-                            <div class="sectionTitle">
-                                <p class="sectionLink activeLink" onclick="openSection('exp')">Experience</p>
-                                <p class="sectionLink" onclick="openSection('edu')">Education</p>
-                            </div>
-                            <div class="sectionContent activeContent" id="exp">
-                                <ul>
-                                    <li>Some Experience</li>
-                                    <li>Some Experience</li>
-                                    <li>Some Experience</li>
-                                </ul>
-                            </div>
-                            <div class="sectionContent" id="edu">
-                                <ul>
-                                    <li>Some Experience</li>
-                                    <li>Some Experience</li>
-                                    <li>Some Experience</li>
-                                </ul>
+                            <div class="aboutContentSection">
+                                <div class="sectionTitle">
+                                    <p class="sectionLink activeLink" onclick="openSection('exp')">Experience</p>
+                                    <p class="sectionLink" onclick="openSection('edu')">Education</p>
+                                </div>
+                                <div class="sectionContent activeContent" id="exp">
+                                    <ul>
+                                        <li>Some Experience</li>
+                                        <li>Some Experience</li>
+                                        <li>Some Experience</li>
+                                    </ul>
+                                </div>
+                                <div class="sectionContent" id="edu">
+                                    <ul>
+                                        <li>Some Experience</li>
+                                        <li>Some Experience</li>
+                                        <li>Some Experience</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- skills section -->
-            <section id="skills">
+            <section class="skills" id="skills">
                 <h1 class="subTitle">My <span>Skills</span></h1>
                 <div class="skillRow">
                     <div class="wrap1">
@@ -164,7 +166,7 @@
                 </div>
             </section>
             <!-- contact me section -->
-            <section id="contact">
+            <section class="contact" id="contact">
                 <div class="contact-content">
                     <div class="contactRow">
                         <div class="contactLeft">
@@ -204,6 +206,7 @@
                     <p>Copyright &copy; 2023 by Henry Dao</p>
                 </div>
             </footer>
+            <!-- arrow to top -->
             <a href="#" class="upTop"><i class="fa-solid fa-arrow-up"></i></a>
         </main>
         <script src="main.js"></script>

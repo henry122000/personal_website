@@ -95,10 +95,12 @@ nav ul li a:hover::after{
     background-position: center;
     background-size: cover; 
 }
-.hText{
+.home.scrollAnimate .hText{
     padding: 15% 20%; 
     padding-bottom: 15px;
     font-size: 60px;
+    opacity: 0;
+    animation: slideRight 1.5s ease forwards;
 }
 .hText h1 span{
     color: #2196F3;
@@ -106,8 +108,10 @@ nav ul li a:hover::after{
 .typeLine{
     font-size: 60px;
 }
-.homeLink{
+.home.scrollAnimate .homeLink{
     padding: 10px 20%;
+    opacity: 0;
+    animation: slideLeft 1.5s 0.5s ease forwards;
 }
 .homeLink a{
     display: inline-flex;
@@ -157,11 +161,19 @@ nav ul li a:hover::after{
 }
 .aboutContent .summary{
     padding-bottom: 20px;
+    opacity: 0;
 }
-.subTitle{
+.about.scrollAnimate .aboutContent .summary{
+    animation: slideLeft 1s 0.5s ease forwards;
+}
+.about .subTitle{
     font-size: 60px;
     font-weight: 900;
     padding-bottom: 20px;
+    opacity: 0;
+}
+.about.scrollAnimate .subTitle{
+    animation: slideRight 1.5s ease forwards;
 }
 .subTitle span{
     color: #2196F3;
@@ -169,6 +181,12 @@ nav ul li a:hover::after{
 .sectionTitle{
     display: flex;
     margin: 20px 0 40px;
+}
+.aboutContentSection{
+    opacity: 0;
+}
+.about.scrollAnimate .aboutContentSection{
+    animation: slideRight 1s 0.5s ease forwards;
 }
 .sectionLink{
     margin-right: 50px;
@@ -207,9 +225,15 @@ nav ul li a:hover::after{
     padding: 8% 10%;
     align-items: center;
 }
-#skills .subTitle{
+.skills .subTitle{
+    font-size: 60px;
+    font-weight: 900;
     text-align: center;
     padding-bottom: 70px ;
+    opacity: 0;
+}
+.skills.scrollAnimate .subTitle{
+    animation: slideRight 1.5s ease forwards;
 }
 #skills .skillRow{
     display: flex;
@@ -222,6 +246,10 @@ nav ul li a:hover::after{
 .wrap1 .heading1{
     font-size: 40px;
     padding: 20px 40px 20px;
+    opacity: 0;  
+}
+.skills.scrollAnimate .wrap1 .heading1{
+    animation: slideLeft 1s 0.5s ease forwards;
 }
 .wrap1 .techBar{
     padding: 10px 30px;
@@ -253,7 +281,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     margin-top: 10px;
 }
-.techBar .bar .progressBar span{
+.skills.scrollAnimate .techBar .bar .progressBar span{
     background-color: #2196F3;
     display: block;
     height: 100%;
@@ -339,7 +367,7 @@ nav ul li a:hover::after{
     width: 120px;
     height: 160px;
 }
-.circleBar .radialBar .progressLine{
+.circleBar .radialBar .progressLine {
     stroke-width: 10;
     stop-color: #0b0b0b;
     fill: transparent;
@@ -356,16 +384,16 @@ nav ul li a:hover::after{
     stroke-dashoffset: 502;
     stroke-linecap: round;
 }
-.line1{
+.skills.scrollAnimate .line1{
     animation: animateLine1 1s 0.5s linear forwards;
 }
-.line2{
+.skills.scrollAnimate .line2{
     animation: animateLine2 1s 0.5s linear forwards;
 }
-.line3{
+.skills.scrollAnimate .line3{
     animation: animateLine3 1s 0.5s linear forwards;
 }
-.line4{
+.skills.scrollAnimate .line4{
     animation: animateLine4 1s 0.5s linear forwards;
 }
 .circleBar .radialBar .percentage{
@@ -375,8 +403,10 @@ nav ul li a:hover::after{
     transform: translate(-50%, -50%);
     font-size: 17px;
     font-weight: bold;
-    animation: showContent 0.5s 1s linear forwards;
     opacity: 0;
+}
+.skills.scrollAnimate .circleBar .radialBar .percentage{
+    animation: showContent 0.5s 1.5s linear forwards;
 }
 .circleBar .radialBar .textSub{
     width: 100%;
@@ -386,7 +416,10 @@ nav ul li a:hover::after{
     bottom: -5px;
     transform: translateX(-50px);
     font-size: 17px;
-    animation: showContent 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.skills.scrollAnimate .circleBar .radialBar .textSub{
+    animation: showContent 1s linear forwards;
 }
 /* ---Contact--- */
 .contactRow{
@@ -401,6 +434,15 @@ nav ul li a:hover::after{
     height: 95vh;
     padding: 12% 10%;
 }
+.contact .subTitle{
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+.contact.scrollAnimate .subTitle{
+    animation: slideRight 1.5s ease forwards;
+} 
 .contactLeft{
     flex-basis: 35%;
 }
@@ -410,6 +452,10 @@ nav ul li a:hover::after{
 .contactLeft p{
     padding-top: 50px;
     font-size: 25px;
+    opacity: 0;
+}
+.contact.scrollAnimate .contactLeft p{
+    animation: slideLeft 1s 0.5s ease forwards;
 }
 .contactLeft .email{
     padding: 30px 0px;
@@ -423,6 +469,10 @@ nav ul li a:hover::after{
 .contactLeft .contactLink{
     padding: 5px 0px;
     font-size: 25px;
+    opacity: 0;
+}
+.contact.scrollAnimate .contactLeft .contactLink{
+    animation: slideRight 1s 1s ease forwards;
 }
 .contactLeft .contactLink a{
     display: inline-flex;
@@ -496,6 +546,7 @@ form textarea{
 .footerText p{
     font-size: 20px;
 }
+/* ---arrow to top--- */
 .upTop{
     position: fixed;
     bottom: 40px;
@@ -515,12 +566,21 @@ form textarea{
 .upTop i:hover{
     color: white;
     background-color: #2196F3;
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     box-shadow: 0 0 20px #2196F3;
     /* border: 3px solid white; */
 }
 
 /* ---animation-- */
+.animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    z-index: 98;
+}
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
