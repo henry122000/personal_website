@@ -153,6 +153,10 @@ nav ul li a:hover::after{
     border-radius: 15px;
     box-shadow: 0 0 20px #2196F3, 0 0 60px #2196F3;
     margin-left: 150px;
+    opacity: 0;
+}
+.about.scrollAnimate .picAbout img{
+    animation: slideTop 1.5s ease forwards;
 }
 .aboutContent{
     padding: 0px;
@@ -495,6 +499,10 @@ nav ul li a:hover::after{
 }
 .contactRight form{
     width: 100%;
+    opacity: 0;
+}
+.contact.scrollAnimate .contactRight form{
+    animation: slideDown 1s linear forwards;
 }
 form input, form textarea {
     /* position: relative; */
@@ -524,18 +532,6 @@ form textarea{
     height: 250px;
     resize: none;
 }
-/* #contact .contactRight form .focus{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: red; 
-    background: #112e42;
-    border-radius: 6px;
-    z-index: -1;
-    transition: 0.5s;
-} */
 /* ---footer--- */
 .footer{
     height: 5vh;
@@ -568,9 +564,7 @@ form textarea{
     background-color: #2196F3;
     transform: translateY(-10px);
     box-shadow: 0 0 20px #2196F3;
-    /* border: 3px solid white; */
 }
-
 /* ---animation-- */
 .animate{
     position: absolute;
@@ -598,6 +592,26 @@ form textarea{
     }
     100%{
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
         opacity: 1;
     }
 }
