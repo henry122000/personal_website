@@ -565,16 +565,11 @@ form textarea{
     transform: translateY(-10px);
     box-shadow: 0 0 20px #2196F3;
 }
-/* ---animation-- */
-.animate{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: yellowgreen;
-    z-index: 98;
+/* ---css for small screens--- */
+@media only screen and (max-width: 2000px){
+
 }
+/* ---animation-- */
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
