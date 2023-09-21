@@ -566,7 +566,7 @@ form textarea{
     box-shadow: 0 0 20px #2196F3;
 }
 /* ---css for small screens--- */
-@media only screen and (max-width: 2000px){
+@media only screen and (max-width: 1800px){
 
 }
 /* ---animation-- */
