@@ -566,8 +566,30 @@ form textarea{
     box-shadow: 0 0 20px #2196F3;
 }
 /* ---css for small screens--- */
-@media only screen and (max-width: 1800px){
-
+@media only screen and (max-width: 1750px){
+    .aboutContent{
+        flex-basis: 55%;
+    }
+}
+@media only screen and (max-width: 1600px){
+    .typeLine{
+        font-size: 50px;
+    }
+    .home.scrollAnimate .hText{
+        font-size: 50px;
+    }
+    #about{
+        padding: 10% 5%;
+    }
+    .wrap1 .techBar{
+        height: 85%;
+    }
+    .wrap1 .circleBar{
+        height: 85%;
+    }
+    .skills .subTitle{
+        padding-bottom: 0px ;
+    }
 }
 /* ---animation-- */
 @keyframes slideRight{
