@@ -606,6 +606,17 @@ form textarea{
     .contactRight{
         flex-basis: 50%;
     }
+    .home.scrollAnimate .hText{
+        font-size: 45px;
+    }
+    .typeLine{
+        font-size: 45px;
+    }
+    .homeLink a{
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
 }
 /* ---animation-- */
 @keyframes slideRight{
