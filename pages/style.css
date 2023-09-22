@@ -149,7 +149,6 @@ nav ul li a:hover::after{
 }
 .picAbout img{
     width: 60%;
-    min-width: 300px;
     border-radius: 15px;
     box-shadow: 0 0 20px #2196F3, 0 0 60px #2196F3;
     margin-left: 150px;
@@ -589,6 +588,23 @@ form textarea{
     }
     .skills .subTitle{
         padding-bottom: 0px ;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .picAbout img{
+        width: 70%;
+    }
+    .about .subTitle,
+    .skills .subTitle,
+    .contact .subTitle{
+        font-size: 50px;
+        padding-bottom: 0px;
+    }
+    .contactLeft{
+        flex-basis: 40%;
+    }
+    .contactRight{
+        flex-basis: 50%;
     }
 }
 /* ---animation-- */
