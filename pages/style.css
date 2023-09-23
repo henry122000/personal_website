@@ -87,6 +87,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav .fa-solid{
+    display: none;
+}
 /* -------home------- */
 #home {
     width: 100%;
@@ -616,6 +619,37 @@ form textarea{
         width: 50px;
         height: 50px;
         font-size: 28px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #home{
+        background-image: none;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        background: #2196F3;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px  10px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+    nav ul li a{
+        color: #fff;
     }
 }
 /* ---animation-- */
