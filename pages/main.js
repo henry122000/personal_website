@@ -6,7 +6,7 @@ var typed= new Typed(".text", {
     backDelay: 1000,
     loop: true
 })
-// about me open tab
+// about me - open tab
 var section_links = document.getElementsByClassName("sectionLink");
 var section_contents = document.getElementsByClassName("sectionContent");
 function openSection(sectionName){
@@ -41,5 +41,12 @@ window.onscroll = () => {
 
         }
     });
-    
+}
+//open/close side nav when screen < 1200px
+var sideMenu = document.getElementById("menuBar");
+function openMenu(){
+    sideMenu.style.right = "0";
+}
+function closeMenu(){
+    sideMenu.style.right = "-200px";
 }
