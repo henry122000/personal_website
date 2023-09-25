@@ -621,13 +621,14 @@ form textarea{
         font-size: 28px;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
     #home{
         background-image: none;
     }
     nav .fa-solid{
         display: block;
         font-size: 30px;
+        padding-top: 20px;
     }
     nav ul{
         background: #2196F3;
@@ -636,20 +637,32 @@ form textarea{
         right: 0;
         width: 200px;
         height: 100vh;
-        padding-top: 50px;
+        padding-top: 10%;
     }
     nav ul li{
         display: block;
-        margin: 25px  10px;
+        margin: 25px 30px 30px;
+        text-align: center;
     }
     nav ul .fa-solid{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        /* top: 25px; */
+        left: 40%;
         cursor: pointer;
     }
     nav ul li a{
         color: #fff;
+    }
+    ul li a:hover,
+    ul li a.active{
+	background-color: white;
+	color: #2196F3;
+    }
+    nav ul li a::before{
+        background: white;
+    }
+    nav ul li a::after{
+        background: white;
     }
 }
 /* ---animation-- */
