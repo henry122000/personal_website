@@ -515,7 +515,6 @@ nav .fa-solid{
     animation: slideDown 1s linear forwards;
 }
 form input, form textarea {
-    /* position: relative; */
     width: 100%;
     border: 0;
     outline: none;
@@ -808,6 +807,47 @@ form textarea{
     }
     .contactLeft .email{
         padding: 10px 0px;
+    }
+    .contactLeft .contactLink{
+        padding: 5px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .contactLeft .contactLink a{
+        width: 30px;
+        height: 30px;
+        margin: 0px 3px;
+    }
+    form input, form textarea {
+        padding: 10px;
+        margin: 5px 0;
+        color: #fff;
+        font-size: 16px;
+    }
+    .submitButton {
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        background: #2196F3;
+        width: fit-content;
+        border: 1px solid #2196F3;
+        padding: 10px 30px;
+        border-radius: 6px;
+        margin: auto;
+    }
+    form textarea{
+        height: 200px;
+        resize: none;
+    }
+    .footer{
+        height: fit-content;
+        text-align: center;
+        background: #2196F3;
+        padding: 10px;
+    }
+    .footerText p{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 400px){
