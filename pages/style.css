@@ -768,6 +768,46 @@ form textarea{
     }
     .skills .skillRow .heading1{
         font-size: 25px;
+        padding: 20px 10px;
+    }
+    .wrap1 .techBar{
+        padding: 0px;
+        font-size: 16px;
+        border: 3px solid #2196F3;        
+        border-radius: 15px;
+        margin: 0px;
+        height: fit-content;
+    }
+    .wrap1 .circleBar{
+        padding: 0px;
+        font-size: 16px;
+        border: 3px solid #2196F3;        
+        border-radius: 15px;
+        margin: 0px;
+        height: fit-content;
+    }
+    .circleBar .radialBar .textSub{
+        left: 30%;
+        font-size: 16px;
+    }
+    .contact-content{
+        padding-top: 40px;
+    }
+    .contact-content .contactLeft p{
+        font-size: 16px;
+    }
+    .contact .subTitle{
+        padding-bottom: 0px;
+    }
+    .contactLeft,
+    .contactRight{
+        flex-basis: 100%;
+    }
+    .contactLeft{
+        padding-top: 0px;
+    }
+    .contactLeft .email{
+        padding: 10px 0px;
     }
 }
 @media only screen and (max-width: 400px){
