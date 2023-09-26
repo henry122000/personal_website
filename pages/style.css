@@ -27,7 +27,7 @@ header{
     padding: 10px;
     width: 10%;
     height: 10%;
-    min-height: 70px;
+    min-height: 50px;
     min-width: 150px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -724,6 +724,11 @@ form textarea{
     }
 }
 @media only screen and (max-width: 700px){
+    .about,
+    .skills,
+    .contact{
+        height: auto;
+    }
     .home .greet{
         padding-top: 100%;
     }
@@ -738,6 +743,7 @@ form textarea{
     .skills .subTitle,
     .contact .subTitle{
         font-size: 30px;
+        text-align: center;
     }
     .aboutContent p,
     .aboutContent .aboutContentSection{
@@ -747,7 +753,7 @@ form textarea{
         padding: 10px 0px;
     }
     .picAbout{
-        padding: 50px 10% 20px;
+        padding: 30px 10% 20px;
     }
     .picAbout img{
         width: 100%;
@@ -756,6 +762,12 @@ form textarea{
     }
     .sectionTitle{
         margin: 10px 0 20px;
+    }
+    .skills .subTitle{
+        padding-top: 50px;
+    }
+    .skills .skillRow .heading1{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 400px){
