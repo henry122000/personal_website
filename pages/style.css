@@ -817,6 +817,9 @@ form textarea{
         width: 30px;
         height: 30px;
         margin: 0px 3px;
+        background-color: #2196F3;
+        color: #fff;
+        box-shadow: 0 0 10px #2196F3;
     }
     form input, form textarea {
         padding: 10px;
@@ -835,6 +838,7 @@ form textarea{
         padding: 10px 30px;
         border-radius: 6px;
         margin: auto;
+        box-shadow: 0 0 10px #2196F3;
     }
     form textarea{
         height: 200px;
