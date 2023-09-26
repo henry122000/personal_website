@@ -623,7 +623,16 @@ form textarea{
 }
 @media only screen and (max-width: 1200px){
     #home{
-        background-image: none;
+        background-image: url(pics/phoneBackground.png);
+    }
+    #home::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.65);
     }
     nav .fa-solid{
         display: block;
@@ -649,7 +658,7 @@ form textarea{
     nav .fa-solid{
         cursor: pointer;
     }
-    nav ul .fa-solid{
+    nav ul .fa-solid.fa-circle-xmark{
         position: absolute;
         left: 40%;
     }
@@ -666,6 +675,41 @@ form textarea{
     }
     nav ul li a::after{
         background: white;
+    }
+    nav .fa-bars{
+        margin: 0px 20px 20px;
+    }
+    .home .hText{
+        padding: 0px;
+        margin-top: 50px;
+        left: 0px;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    .home .greet{
+        margin-top: 100%;
+    }
+    .home .hText .typeLine{
+        font-size: 25px;
+    }
+    .home .text::before{
+        content: "\a";
+        white-space: pre;
+    }
+    .home.scrollAnimate .homeLink{
+        padding: 0 20%;
+    }
+    .homeLink a{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        margin: 0px 5px;
+        border: 3px solid #2196F3;
+    }
+    .picAbout,
+    .aboutContent{
+        flex-basis: 100%;
     }
 }
 /* ---animation-- */
