@@ -724,10 +724,10 @@ form textarea{
     }
 }
 @media only screen and (max-width: 700px){
-    .about,
-    .skills,
-    .contact{
-        height: auto;
+    #about,
+    #skills,
+    #contact{
+        height: fit-content;
     }
     .home .greet{
         padding-top: 100%;
