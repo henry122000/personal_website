@@ -200,6 +200,11 @@ nav .fa-solid{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    transition: 0.3s;
+}
+.sectionLink:hover{
+    font-weight: bolder;
+    transform: translateY(-5px);
 }
 .sectionLink::after{
     content: "";
@@ -213,6 +218,9 @@ nav .fa-solid{
 }
 .sectionLink.activeLink::after{
     width: 100%;
+}
+.sectionLink.activeLink{
+    font-weight: bolder;
 }
 .sectionContent ul li{
     list-style: none;
@@ -702,10 +710,6 @@ form textarea{
         margin: 0px 5px;
         border: 3px solid #2196F3;
     }
-    .picAbout,
-    .aboutContent{
-        flex-basis: 100%;
-    }
     .upTop{
         bottom: 20px;
         right: 40px;
@@ -723,6 +727,39 @@ form textarea{
     .home .greet{
         padding-top: 100%;
     }
+    .picAbout,
+    .aboutContent{
+        flex-basis: 100%;
+    }
+    .row{
+        padding: 30px;
+    }
+    .about .subTitle,
+    .skills .subTitle,
+    .contact .subTitle{
+        font-size: 30px;
+    }
+    .aboutContent p,
+    .aboutContent .aboutContentSection{
+        font-size: 16px;
+    }
+    .aboutContent .summary{
+        padding: 10px 0px;
+    }
+    .picAbout{
+        padding: 50px 10% 20px;
+    }
+    .picAbout img{
+        width: 100%;
+        margin-left: 0px;
+        box-shadow: 0 0 20px #2196F3, 0 0 30px #2196F3;
+    }
+    .sectionTitle{
+        margin: 10px 0 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+
 }
 /* ---animation-- */
 @keyframes slideRight{
