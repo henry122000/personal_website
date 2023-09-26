@@ -681,14 +681,9 @@ form textarea{
     }
     .home .hText{
         padding: 0px;
-        margin-top: 50px;
-        left: 0px;
     }
     .home h1{
         font-size: 30px;
-    }
-    .home .greet{
-        margin-top: 100%;
     }
     .home .hText .typeLine{
         font-size: 25px;
@@ -710,6 +705,23 @@ form textarea{
     .picAbout,
     .aboutContent{
         flex-basis: 100%;
+    }
+    .upTop{
+        bottom: 20px;
+        right: 40px;
+    }
+    .upTop i{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 7px 10px;
+        color: #2196F3;
+        border: 3px solid #2196F3;
+    }
+}
+@media only screen and (max-width: 700px){
+    .home .greet{
+        padding-top: 100%;
     }
 }
 /* ---animation-- */
