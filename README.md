@@ -1,7 +1,9 @@
 # personal_website
-Personal portfolio website
+Personal portfolio Website Henry Dao
 
-# pages including: Summary, Education, Experiences, Contact 
+Author: Henry Dao
 
-Purpose: exemplifies skills, qualifications, education, and experiences
+Pages including: Homepage, About me, Skills, Contact 
+
+Using: HTML, CSS, Javascript
 
