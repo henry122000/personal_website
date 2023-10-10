@@ -731,6 +731,11 @@ form textarea{
     .home .greet{
         padding-top: 100%;
     }
+    .homeLink a:hover{
+        background-color: transparent;
+        color: #2196F3;
+        box-shadow: none;
+    }
     .picAbout,
     .aboutContent{
         flex-basis: 100%;
