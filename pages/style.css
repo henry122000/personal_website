@@ -62,8 +62,8 @@ ul li a.active{
     border-radius: 6px;
 }
 nav ul li a::before{
-    content:'';
-    width:0;
+    content: '';
+    width: 0;
     height: 3px;
     background: #2196F3;
     position: absolute;
@@ -75,8 +75,8 @@ nav ul li a:hover::before{
     width: 100%;
 }
 nav ul li a::after{
-    content:'';
-    width:0;
+    content: '';
+    width: 0;
     height: 3px;
     background: #2196F3;
     position: absolute;
@@ -870,6 +870,17 @@ form textarea{
         transform: none;
         box-shadow: none;
     }
+    nav ul li a:hover::before{
+        width: 0%;
+    }
+    nav ul li a:hover::after{
+        width: 0%;
+    }
+    ul li a:hover{
+	background-color: transparent;
+	color: white;
+    border-radius: 6px;
+}
 }
 @media only screen and (max-width: 400px){
 
