@@ -826,6 +826,12 @@ form textarea{
         color: #fff;
         box-shadow: 0 0 10px #2196F3;
     }
+    .contactLeft .contactLink a:hover{
+        transition: 0.5s;
+        background-color: #2196F3;
+        color: #fff;
+        transform: none;
+    }
     form input, form textarea {
         padding: 10px;
         margin: 5px 0;
@@ -857,6 +863,12 @@ form textarea{
     }
     .footerText p{
         font-size: 16px;
+    }
+    .upTop i:hover{
+        color: #2196F3;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
     }
 }
 @media only screen and (max-width: 400px){
