@@ -196,7 +196,7 @@ nav .fa-solid{
 }
 .sectionLink{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -223,7 +223,6 @@ nav .fa-solid{
     font-weight: bolder;
 }
 .sectionContent ul li{
-    list-style: none;
     margin: 10px 0;
 }
 .sectionContent{
@@ -231,6 +230,13 @@ nav .fa-solid{
 }
 .sectionContent.activeContent{
     display: block;
+}
+.list{
+    color: #2196F3;
+    font-weight: 900;
+}
+.where{
+    font-style: italic;
 }
 /* ---Skills--- */
 #skills{
@@ -948,16 +954,16 @@ form textarea{
 }
 @keyframes animateLine2 {
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 70;
     }
 }
 @keyframes animateLine3 {
     100%{
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 80;
     }
 }
 @keyframes animateLine4 {
     100%{
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 125;
     }
 }
