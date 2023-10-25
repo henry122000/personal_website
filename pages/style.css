@@ -580,6 +580,26 @@ form textarea{
     transform: translateY(-10px);
     box-shadow: 0 0 20px #2196F3;
 }
+/* -----Scroll bar------ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 /* ---css for small screens--- */
 @media only screen and (max-width: 1750px){
     .aboutContent{
