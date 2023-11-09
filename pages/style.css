@@ -656,7 +656,10 @@ form textarea{
 }
 @media only screen and (max-width: 1200px){
     #home{
+        position: relative;
         background-image: url(pics/phoneBackground.png);
+        background-position: center;
+        background-size: cover;
     }
     #home::before{
         content: "";
